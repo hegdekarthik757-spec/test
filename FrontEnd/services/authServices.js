@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const SERVER_URL = "http://localhost:3000/api";
+const SERVER_URL = "http://51.20.128.12/api";
 
 const registerUser = (data) => {
   return axios.post(`${SERVER_URL}/register`, data);

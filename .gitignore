@@ -1,0 +1,15 @@
+# Backend
+BackEnd/node_modules/
+BackEnd/.env
+
+# Frontend
+FrontEnd/node_modules/
+FrontEnd/.env
+FrontEnd/dist/
+FrontEnd/build/
+
+# Logs
+*.log
+
+# System
+.DS_Store

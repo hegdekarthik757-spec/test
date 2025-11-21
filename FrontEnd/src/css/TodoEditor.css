@@ -1,0 +1,153 @@
+.todo-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+  text-align: center;
+}
+.todo-container h1 {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+}
+.input-area {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}   
+.taskInput {
+  width: 70%;
+  padding: 0.7rem;
+  border: 2px solid #3f51b5;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+.taskInput:focus {
+  border-color: #0e8fff;
+  box-shadow: 0 0 5px rgba(63, 81, 181, 0.3);
+}
+.task-form{
+  display: flex;
+  gap: 10px;
+}
+.addTaskBtn{
+    padding: 1rem 3rem;
+    background: #3f51b5;
+    white-space: nowrap;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: pulse 2s infinite;
+}
+.addTaskBtn:hover {
+  background: #0e8fff;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.TitleAndDescription {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff8ee;
+  border: 1px solid #3b4cca;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease-in-out;
+   gap: 10px;
+}
+
+/* Optional hover lift */
+.TitleAndDescription:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Checkbox */
+.checkBox {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+  flex-shrink:0;
+}
+
+/* Make text box vertical */
+.textBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+ 
+}
+
+/* Task title */
+.textBox h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  
+}
+
+/* Description */
+.textBox p {
+  margin: 3px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Edit/Delete Buttons */
+.toDoEditButtons {
+  display: flex;
+  gap: 15px;
+}
+
+.toDoEditButtons button {
+  border: none;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: 0.2s ease;
+}
+img{
+  height: 25px;
+  width: 25px;
+}
+.textBox {
+  transition: 0.3s ease;
+}
+
+.textBox.checked {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+
+/* mobile */
+
+@media (max-width: 600px) {
+  .task-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .taskInput {
+    width: 100%;
+  }
+
+  .addTaskBtn {
+    width: 100%;
+    padding: 1rem;
+  }
+}

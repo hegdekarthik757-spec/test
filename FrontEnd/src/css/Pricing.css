@@ -1,0 +1,149 @@
+.pricing {
+    text-align: center;
+    margin: 3rem 10rem auto 10rem;
+    padding: 2.5rem 1rem;
+    background: #f9faff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .pricing {
+    text-align: center;
+    margin: 3rem auto;    /* centers the whole section */
+    max-width: 900px;     /* optional: keeps layout clean */
+    padding: 2.5rem 1rem;
+}
+
+
+  .pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* centers cards horizontally */
+    gap: 2rem;
+}
+
+
+  .price-card {
+    width: 100%;
+  }
+}
+
+
+.pricing h2 {
+    color: #3f51b5;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.pricing-subtitle {
+    color: #555;
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+}
+
+.pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.price-card {
+    background: white;
+    border-radius: 10px;
+    width: 270px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+
+.price-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.price-card h3 {
+    color: #3f51b5;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0.5rem 0 1rem;
+    color: #333;
+}
+
+.price span {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.price-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.price-card ul li {
+    margin: 0.5rem 0;
+    color: #444;
+}
+.btnPricing:hover{
+    color: white;
+    background-color: #3f51b5;
+    padding: 1rem;
+    transition: 0.2s ease-in-out;
+    border-radius: 10px;
+}
+
+/* card links */
+
+.pricing-cards a{
+    text-decoration: none;
+    color: #3f51b5;
+}
+
+.popular {
+    background: #3f51b5;
+    color: white;
+    transform: scale(1.05);
+}
+
+.popular h3, .popular .price .psp, .popular ul li {
+    color: white;
+}
+
+.popular .btnPricing {
+    background: white;
+    padding: 1rem;
+    color: #3f51b5;
+    border-radius: 5px;
+}
+
+.popular .btnPricing:hover {
+    background: #e8e8ff;
+    color: black;
+}
+footer {
+  text-align: center;
+  padding: 3rem;
+  color: black;
+  animation: slideIn 1s ease-in-out;
+}
+
+/* animations */
+.pricing {
+        animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

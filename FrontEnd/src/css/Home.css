@@ -1,0 +1,112 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+body{
+        font-family: "Poppins", sans-serif;
+        background: #f6f8fa;
+        color: #333;
+        line-height: 1.6;
+}
+
+.containerHome {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.aboutTodoList {
+        text-align: center;
+}
+
+.aboutTodoList h2 {
+        color: #3f51b5;
+        margin-bottom: 1rem;
+}
+
+.aboutTodoList p {
+        font-size: 1.05rem;
+        color: #555;
+}
+
+.featuresTodoList {
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+        
+}
+
+.featureTodoList {
+        background: #f0f3ff;
+        padding: 1.5rem;
+        border-radius: 8px;
+        width: 260px;
+        text-align: center;
+        transition: transform 0.3s ease;
+}
+
+.featureTodoList:hover {
+        transform: translateY(-5px);
+}
+
+.featureTodoList h3 {
+        color: #3f51b5;
+        margin-bottom: 0.5rem;
+}
+
+footer {
+        text-align: center;
+        padding: 1rem;
+        color: black;
+}
+.btnTryTodoList {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.75rem 1.5rem;
+        background: #3f51b5;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        /* transition: background 0.3s ease-in-out; */
+        /* text-decoration: none; */
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        animation: pulse 2s infinite;
+}
+
+.btnTryTodoList:hover {
+        background: #0e8fff;
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* Subtle attention-grabbing animation */
+@keyframes pulse {
+        0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(82, 119, 250, 0.506); }
+        70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(58, 49, 193, 0); }
+        100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(44, 96, 255, 0); }
+}
+/* animations */
+.containerHome {
+        animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+}
+footer{
+        animation: slideIn 1s ease-in-out ;
+}
+@keyframes slideIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,38 @@
+.navigation {
+        text-align: center;
+        margin-top: 10px;
+        background: transparent;
+        backdrop-filter: blur(10px);
+}
+
+.navigation a {
+        text-decoration: none;
+        margin: 0 15px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+
+}
+.navigation a:hover {
+        color: #00ffff;
+}       
+
+
+.navbar-username {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.navbar-logout {
+  border: none;
+  background: #5d70db;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.navbar-logout:hover {
+  background: #00ffff;
+  color: black;
+}
